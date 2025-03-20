@@ -1,0 +1,166 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0a0f14; /* Deep dark background */
+  color: #e0f7f7; /* Soft cyan text */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #12181f, #1a232e);
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.1);
+  animation: fadeIn 0.8s ease;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading Styling */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #00e5ff; /* Vibrant cyan */
+  margin-bottom: 40px;
+  animation: slideDown 0.8s ease;
+}
+
+/* Upload Section */
+.upload-section {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.upload-section input, 
+.upload-section button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.upload-section input {
+  background: #1a232e;
+  color: #e0f7f7;
+}
+
+.upload-section button {
+  background: #00e5ff;
+  color: #0a0f14;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.upload-section button:hover {
+  background: #00bcd4;
+  transform: scale(1.05);
+}
+
+/* File List Table */
+.file-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  animation: fadeIn 1.2s ease;
+}
+
+.file-list th, .file-list td {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+  text-align: left;
+}
+
+.file-list th {
+  background: rgba(0, 229, 255, 0.1);
+  color: #00e5ff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.file-list td a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.file-list td a:hover {
+  color: #00e5ff;
+}
+
+/* Action Buttons */
+.file-list button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #00bcd4;
+  color: #0a0f14;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.file-list button:hover {
+  background: #00e5ff;
+  transform: scale(1.1);
+}
+
+/* Book Details */
+.book-details {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #1a232e;
+  box-shadow: 0 6px 18px rgba(0, 255, 255, 0.08);
+  animation: slideUp 1s ease;
+}
+
+.book-details h2 {
+  color: #00e5ff;
+  margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upload-section {
+    flex-direction: column;
+  }
+
+  input, button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

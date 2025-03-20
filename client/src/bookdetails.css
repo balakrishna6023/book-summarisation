@@ -1,0 +1,86 @@
+/* Updated Book Details Styling */
+
+.book-details-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #12181f, #1a232e);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.1);
+  font-family: 'Inter', sans-serif;
+  animation: fadeIn 0.8s ease;
+  transition: transform 0.3s ease;
+}
+
+.book-details-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title Styling */
+.title {
+  font-size: 32px;
+  color: #00e5ff; /* Vibrant Cyan */
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  animation: slideDown 0.8s ease;
+}
+
+/* Book Details Table */
+.book-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  animation: fadeIn 1s ease;
+}
+
+.book-details-table td {
+  padding: 14px 18px;
+  font-size: 18px;
+  line-height: 1.8;
+  white-space: pre-line;
+  color: #e0f7f7; /* Soft Cyan */
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+.book-details-table td:first-child {
+  font-weight: bold;
+  background: rgba(0, 229, 255, 0.1);
+  color: #00e5ff; /* Highlighted Cyan */
+  width: 35%;
+  text-transform: uppercase;
+}
+
+/* Hover Effect on Rows */
+.book-details-table tr:hover td {
+  background: rgba(0, 229, 255, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .book-details-container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .book-details-table td {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
