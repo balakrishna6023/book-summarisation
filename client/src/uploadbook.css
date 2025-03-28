@@ -1,0 +1,76 @@
+/* UploadBook.css */
+.upload-book-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #121212;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .upload-book-container:hover {
+    transform: scale(1.02);
+  }
+  
+  .upload-book-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #00ff99;
+  }
+  
+  .upload-book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    letter-spacing: 2px;
+  }
+  
+  .upload-book-input, 
+  .upload-book-file {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #00ff99;
+    background: #222;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .upload-book-input:focus, 
+  .upload-book-file:focus {
+    border-color: #00cc66;
+  }
+  
+  .upload-book-button {
+    padding: 12px;
+    background: linear-gradient(135deg, #00ff99, #00cc66);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .upload-book-button:hover {
+    background: linear-gradient(135deg, #00cc66, #009955);
+    transform: translateY(-2px);
+  }
+  
+  .upload-book-button:active {
+    transform: scale(0.95);
+  }
+  
+  .upload-book-message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
